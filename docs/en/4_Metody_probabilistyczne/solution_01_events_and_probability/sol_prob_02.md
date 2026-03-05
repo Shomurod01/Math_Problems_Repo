@@ -1,83 +1,103 @@
-# Reliability of a Series–Parallel Electrical Circuit
-
-## 📌 Useful Definitions and Formulas
-
-## 1. Event
-An **event** is a set of outcomes of a random experiment.  
-In our case:
-- \( A_i \) — event that element \( a_i \) is functional at time \( t \).
----
-### 2. Intersection of Events ( ∩ )
-The intersection of events \( A \) and \( B \) means **both events occur**.
+# Task List No. 1 – Random Events and Probability
+## 📘 Useful Definitions and Formulas
+### 1. Sample Space
+The **sample space** is the set of all possible elementary outcomes of a random experiment.
 $$
-A \cap B
-$$
-This represents:  
-> Event \( A \) occurs **and** event \( B \) occurs.
----
-### 3. Union of Events ( ∪ )
-The union of events \( A \) and \( B \) means **at least one of them occurs**.
-$$
-A \cup B
-$$
-This represents:  
-> Event \( A \) occurs **or** event \( B \) occurs (or both).
----
-## 📌 Circuit Structure Analysis
-We are given:
-- Element \( a_1 \) is connected **in series**
-- Elements \( a_2 \) and \( a_3 \) are connected **in parallel**
-- \( A_i \) = event that element \( a_i \) is functional at time \( t \)
-We must describe event:
-> \( A \): "At time \( t \), the current flow through the circuit is not interrupted."
----
-## 📌 Step 1 — Series Connection Rule
-For elements connected **in series**,  
-the current flows only if **all elements work**.
-So for series:
-
-$$
-\text{Series works} \Longleftrightarrow \text{all components work}
-
-$$
-Mathematically (for two elements):
-$$
-A \cap B
+\Omega = \{ \omega_1, \omega_2, \dots, \omega_n \}
 $$
 ---
-## 📌 Step 2 — Parallel Connection Rule
-For elements connected **in parallel**,  
-the current flows if **at least one element works**.
-So for parallel:
+### 2. Event
+An **event** is any subset of the sample space.
 $$
-\text{Parallel works} \Longleftrightarrow \text{at least one component works}
-$$
-Mathematically (for two elements):
-$$
-A \cup B
+A \subseteq \Omega
 $$
 ---
-## 📌 Step 3 — Apply to Our Circuit
-### 🔹 Parallel Block (a₂ and a₃)
-Since \( a_2 \) and \( a_3 \) are in parallel, the block works if:
+### 3. Union of Events
+The union of two events contains all outcomes that belong to **at least one** of the events.
 $$
-A_2 \cup A_3
+A \cup B = \{ \omega : \omega \in A \text{ or } \omega \in B \}
 $$
 ---
-### 🔹 Entire Circuit
-Element \( a_1 \) is in **series** with the parallel block.
-So the whole circuit works if:
-- \( a_1 \) works  
-AND  
-- the parallel block works
+### 4. Intersection of Events
+The intersection contains outcomes that belong to **both** events.
+$$
+A \cap B = \{ \omega : \omega \in A \text{ and } \omega \in B \}
+$$
+---
+### 5. Difference of Events
+The difference of events contains outcomes that belong to one event but **not** the other.
+$$
+A \setminus B = \{ \omega : \omega \in A \text{ and } \omega \notin B \}
+$$
+---
+# ✅ Problem Solution
+## Given:
+The sample space:
+$$
+\Omega = \{ \omega_1, \omega_2, \omega_3, \omega_4, \omega_5 \}
+$$
+Event A:
+$$
+A = \{ \omega_1, \omega_3, \omega_5 \}
+$$
+Event B:
+$$
+B = \{ \omega_2, \omega_3, \omega_4 \}
+$$
+---
+## 1️⃣ Union of Events
+We collect all elements that are in **A or B (or both)**.
+From A:  
+$\omega_1, \omega_3, \omega_5$
+From B:  
+$\omega_2, \omega_3, \omega_4$
+Combine without repetition:
+$$
+A \cup B = \{ \omega_1, \omega_2, \omega_3, \omega_4, \omega_5 \}
+$$
+Notice that:
+$$
+A \cup B = \Omega
+$$
+---
+## 2️⃣ Intersection of Events
+=
+We find elements common to both A and B.
+Common element:
+$\omega_3$
 Therefore:
 $$
-A = A_1 \cap (A_2 \cup A_3)
+A \cap B = \{ \omega_3 \}
 $$
 ---
-## ✅ Final Answer
-
-The event that the current is not interrupted at time \( t \) is:
+## 3️⃣ Difference of Events \( B \setminus A \)
+We take elements that belong to B but not to A.
+Elements of B:
+$\omega_2, \omega_3, \omega_4$
+Since $\omega_3 \in A$, we remove it.
 $$
-A = A_1 \cap (A_2 \cup A_3)
+B \setminus A = \{ \omega_2, \omega_4 \}
+$$
+---
+## 4️⃣ Difference of Events \( A \setminus B \)
+We take elements that belong to A but not to B.
+Elements of A:
+$\omega_1, \omega_3, \omega_5$
+Since $\omega_3 \in B$, we remove it.
+$$
+A \setminus B = \{ \omega_1, \omega_5 \}
+$$
+---
+# 📌 Final Answers
+$$
+A \cup B = \{ \omega_1, \omega_2, \omega_3, \omega_4, \omega_5 \}
+$$
+$$
+A \cap B = \{ \omega_3 \}
+$$
+$$
+B \setminus A = \{ \omega_2, \omega_4 \}
+$$
+$$
+A \setminus B = \{ \omega_1, \omega_5 \}
 $$
