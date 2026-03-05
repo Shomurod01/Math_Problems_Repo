@@ -2,7 +2,7 @@
 
 ## Useful Definitions and Formulas
 
-### 1. Total Probability Formula
+## 1. Total Probability Formula
 
 If events \(M_1, M_2, \dots, M_n\) form a partition of the sample space (e.g., which machine produced a product), the probability of an event \(A\) (e.g., product is first-grade) is:
 
