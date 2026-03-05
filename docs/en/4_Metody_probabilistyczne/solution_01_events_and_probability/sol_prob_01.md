@@ -87,6 +87,4 @@ B \setminus A = { \omega_2, \omega_4 }
 A \setminus B = { \omega_1, \omega_5 }
 ]
 
----
 
-If you'd like, I can also show this using a Venn diagram explanation for better intuition.
