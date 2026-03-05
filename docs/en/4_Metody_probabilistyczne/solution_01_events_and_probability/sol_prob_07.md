@@ -1,4 +1,4 @@
-# Task 7 – Probability of Receiving Signals with Interference
+# Probability of Receiving Signals with Interference
 
 ## Useful Definitions and Formulas
 
@@ -163,3 +163,4 @@ $$
 $$
 P(010) = 0.0656
 $$
+
