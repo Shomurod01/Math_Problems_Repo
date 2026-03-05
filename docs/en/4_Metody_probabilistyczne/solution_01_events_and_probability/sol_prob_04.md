@@ -2,7 +2,7 @@
 
 ## 📘 Useful Definitions and Formulas
 
-### 1. Parallel System Reliability
+## 1. Parallel System Reliability
 
 For two elements connected in **parallel**, the system functions if **at least one element works**.
 
