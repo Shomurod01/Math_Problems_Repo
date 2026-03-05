@@ -1,4 +1,4 @@
-# Task List No. 1 – Random Events and Probability
+# Random Events and Probability
 
 ## 📘 Useful Definitions and Formulas
 
