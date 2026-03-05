@@ -2,7 +2,7 @@
 
 ## Useful Definitions and Formulas
 
-### 1. Conditional Probability for Independent Symbols
+## 1. Conditional Probability for Independent Symbols
 
 If each symbol is independently transmitted and may flip due to interference:
 
