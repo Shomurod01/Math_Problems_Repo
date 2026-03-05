@@ -2,7 +2,7 @@
 
 ## Useful Definitions and Formulas
 
-### 1. Probability of Independent Letters
+## 1. Probability of Independent Letters
 
 If letters in a sequence are transmitted **independently**, the probability of receiving a specific sequence given the transmitted sequence is the **product of probabilities** for each letter:
 
