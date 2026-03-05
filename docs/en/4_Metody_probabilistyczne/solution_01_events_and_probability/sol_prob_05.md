@@ -2,7 +2,7 @@
 
 ## Useful Definitions and Formulas
 
-### 1. Complementary Event
+## 1. Complementary Event
 
 The **complement** of an event \(A\), denoted \(A'\), is the event that \(A\) does **not** occur.
 
