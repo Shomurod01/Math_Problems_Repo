@@ -8,6 +8,7 @@ The **sample space** is the set of all possible elementary outcomes of a random 
 $$
 \Omega = \{ \omega_1, \omega_2, \dots, \omega_n \}
 $$
+
 ---
 
 ### 2. Event
