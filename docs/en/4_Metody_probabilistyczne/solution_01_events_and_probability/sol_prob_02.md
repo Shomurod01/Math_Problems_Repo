@@ -35,8 +35,10 @@ We must describe event:
 For elements connected **in series**,  
 the current flows only if **all elements work**.
 So for series:
+
 $$
 \text{Series works} \Longleftrightarrow \text{all components work}
+
 $$
 Mathematically (for two elements):
 $$
