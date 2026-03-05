@@ -1,103 +1,95 @@
-# Task List No. 1 – Random Events and Probability
-## 📘 Useful Definitions and Formulas
-### 1. Sample Space
-The **sample space** is the set of all possible elementary outcomes of a random experiment.
+# Reliability of a Series–Parallel Circuit
+
+## Definitions
+
+### 1. Intersection of events
+
+The intersection of events \( A \) and \( B \) means that both events occur.
+
 $$
-\Omega = \{ \omega_1, \omega_2, \dots, \omega_n \}
+A \cap B
 $$
+
 ---
-### 2. Event
-An **event** is any subset of the sample space.
+
+### 2. Union of events
+
+The union of events \( A \) and \( B \) means that at least one of the events occurs.
+
 $$
-A \subseteq \Omega
+A \cup B
 $$
+
 ---
-### 3. Union of Events
-The union of two events contains all outcomes that belong to **at least one** of the events.
+
+### 3. Series connection rule
+
+If elements are connected in series, the circuit works only if all elements work.
+
 $$
-A \cup B = \{ \omega : \omega \in A \text{ or } \omega \in B \}
+\text{Series works} \Longleftrightarrow A \cap B
 $$
+
 ---
-### 4. Intersection of Events
-The intersection contains outcomes that belong to **both** events.
+
+### 4. Parallel connection rule
+
+If elements are connected in parallel, the circuit works if at least one element works.
+
 $$
-A \cap B = \{ \omega : \omega \in A \text{ and } \omega \in B \}
+\text{Parallel works} \Longleftrightarrow A \cup B
 $$
+
 ---
-### 5. Difference of Events
-The difference of events contains outcomes that belong to one event but **not** the other.
+
+## Problem
+
+Element \( a_1 \) is connected in series with a block consisting of two elements \( a_2 \) and \( a_3 \) connected in parallel.
+
+Let
+
 $$
-A \setminus B = \{ \omega : \omega \in A \text{ and } \omega \notin B \}
+A_i = \{\text{element } a_i \text{ is functional at time } t\}, \quad i = 1,2,3.
 $$
+
+Describe the event
+
+$$
+A = \{\text{current flow is not interrupted at time } t\}.
+$$
+
 ---
-# ✅ Problem Solution
-## Given:
-The sample space:
+
+## Solution
+
+### Step 1 — Parallel block
+
+Since \( a_2 \) and \( a_3 \) are connected in parallel, the block works if at least one of them works:
+
 $$
-\Omega = \{ \omega_1, \omega_2, \omega_3, \omega_4, \omega_5 \}
+A_2 \cup A_3
 $$
-Event A:
-$$
-A = \{ \omega_1, \omega_3, \omega_5 \}
-$$
-Event B:
-$$
-B = \{ \omega_2, \omega_3, \omega_4 \}
-$$
+
 ---
-## 1️⃣ Union of Events
-We collect all elements that are in **A or B (or both)**.
-From A:  
-$\omega_1, \omega_3, \omega_5$
-From B:  
-$\omega_2, \omega_3, \omega_4$
-Combine without repetition:
+
+### Step 2 — Entire circuit
+
+Element \( a_1 \) is in series with the parallel block.  
+Thus, the circuit works if:
+
+- \( a_1 \) works, and  
+- the parallel block works.
+
+Therefore,
+
 $$
-A \cup B = \{ \omega_1, \omega_2, \omega_3, \omega_4, \omega_5 \}
+A = A_1 \cap (A_2 \cup A_3)
 $$
-Notice that:
-$$
-A \cup B = \Omega
-$$
+
 ---
-## 2️⃣ Intersection of Events
-=
-We find elements common to both A and B.
-Common element:
-$\omega_3$
-Therefore:
+
+## Final Answer
+
 $$
-A \cap B = \{ \omega_3 \}
-$$
----
-## 3️⃣ Difference of Events \( B \setminus A \)
-We take elements that belong to B but not to A.
-Elements of B:
-$\omega_2, \omega_3, \omega_4$
-Since $\omega_3 \in A$, we remove it.
-$$
-B \setminus A = \{ \omega_2, \omega_4 \}
-$$
----
-## 4️⃣ Difference of Events \( A \setminus B \)
-We take elements that belong to A but not to B.
-Elements of A:
-$\omega_1, \omega_3, \omega_5$
-Since $\omega_3 \in B$, we remove it.
-$$
-A \setminus B = \{ \omega_1, \omega_5 \}
-$$
----
-# 📌 Final Answers
-$$
-A \cup B = \{ \omega_1, \omega_2, \omega_3, \omega_4, \omega_5 \}
-$$
-$$
-A \cap B = \{ \omega_3 \}
-$$
-$$
-B \setminus A = \{ \omega_2, \omega_4 \}
-$$
-$$
-A \setminus B = \{ \omega_1, \omega_5 \}
+A = A_1 \cap (A_2 \cup A_3)
 $$
