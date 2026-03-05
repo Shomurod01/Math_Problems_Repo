@@ -2,7 +2,7 @@
 
 ## Useful Definitions and Formulas
 
-### 1. Probability of an Event
+## 1. Probability of an Event
 
 If all outcomes are equally likely:
 
