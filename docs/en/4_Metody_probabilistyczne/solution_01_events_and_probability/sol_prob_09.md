@@ -2,7 +2,7 @@
 
 ## Useful Definitions and Formulas
 
-### 1. Probability of Independent Events
+## 1. Probability of Independent Events
 
 If events are independent, the probability that **all occur** is the product of their probabilities:
 
