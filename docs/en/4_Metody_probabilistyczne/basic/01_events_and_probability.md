@@ -164,6 +164,7 @@ The order of outcomes matters.
 Consider an experiment consisting of drawing cards from a **standard 52-card deck**.
 
 The order of outcomes matters.
+Treat each outcome as an **ordered sequence** of drawn cards.
 
 1. Define the **sample space** $\Omega_1$ for **drawing one card**.
 2. Construct the **sample space** $\Omega_2$ for **two consecutive draws with replacement**.
@@ -204,6 +205,7 @@ The distance between neighboring lines is $d$.
    - the **orientation angle** of the needle.
 
 4. Express the sample space $\Omega$ as a **set of possible values of these variables**.
+   (You may restrict to $x \in [0, \tfrac{d}{2}]$ for the distance of the needle's center from the nearest line and $\theta \in [0, \tfrac{\pi}{2}]$ for the angle, using symmetry.)
 
 5. Briefly explain why the sample space in this experiment is **continuous**, unlike the sample spaces in the previous tasks.
 
@@ -310,7 +312,7 @@ Finally, define **one additional event** on $\Omega_3$ and compute its probabili
 
 Refer to **Task 3**, where the sample spaces for drawing cards from a standard 52-card deck were defined.
 
-Assume that all cards are **equally likely** to be drawn.
+Assume the deck is **well-shuffled**. In each experiment, every **ordered sequence of draws** is **equally likely** (with or without replacement as specified).
 
 First assign probabilities to all **elementary outcomes** in the sample spaces:
 
@@ -364,9 +366,7 @@ Each day can be in exactly one of the following states:
 - Cloudy ($C$)
 - Rainy ($R$)
 
-Assume that all elementary outcomes in $\Omega_7$ are **equally likely**.
-
-Assume that the weather on each day is independent and each of the three states occurs with probability $\frac{1}{3}$.
+Model the weather as **7 independent days**, where each of the three states occurs with probability $\frac{1}{3}$.
 
 Describe the following events as subsets of $\Omega_7$ and compute their probabilities.
 
@@ -398,7 +398,7 @@ Refer to **Task 5**, where the sample space $\Omega$ of Buffon's needle experime
 A needle of length $L$ is thrown randomly onto a plane with equally spaced parallel lines.  
 The distance between neighboring lines is $d$.
 
-Assume that the position of the needle's center (relative to the nearest line) and its orientation angle are **uniformly distributed** (independently).
+Assume $L \le d$. Let $X \in [0, \tfrac{d}{2}]$ be the distance from the needle's center to the nearest line and $\theta \in [0, \tfrac{\pi}{2}]$ the angle between the needle and the lines. Assume $X$ and $\theta$ are independent and **uniformly distributed** on these intervals.
 
 Describe the following events and compute their probabilities.
 
