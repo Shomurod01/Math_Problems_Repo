@@ -9,7 +9,7 @@ Many probability problems start by counting outcomes: the size of a sample space
 In this task list you will practice:
 
 * identifying the correct counting model,
-* translating a verbal description into a well-defined outcome type,
+* translating a problem description into a precise outcome type,
 * using the model to count outcomes in probability contexts.
 
 ## Key Counting Questions
@@ -28,7 +28,8 @@ Before choosing a formula, decide:
 
 ## Decision Tree for Choosing a Model
 
-The decision tree below helps identify the correct model quickly.
+The decision tree below summarizes the most common cases
+and helps identify the correct counting model quickly.
 
 ```text
 Start: What kind of outcome are we counting?
@@ -74,9 +75,9 @@ Are we using ALL objects or only SOME objects?
 
 ## Overview of Counting Models
 
-For **selections**: use a **combination** (unordered), a **k-permutation (ordered selection without repetition)**, or a **sequence with repetition**.
+Selections: **combination** (unordered), **k-permutation (ordered selection without repetition)**, **sequence with repetition**.
 
-For **arrangements of all objects**: use a **permutation**, a **circular permutation**, or a **permutation with repeated elements**.
+Arrangements of all objects: **permutation**, **circular permutation**, **permutation with repeated elements**.
 
 ---
 
@@ -151,7 +152,7 @@ Typical examples:
 In some European textbooks the term "variation" is used for ordered selections.
 In this course we use the standard English terminology: **k-permutations** (ordered selections).
 
-A **k-permutation** (or ordered selection without repetition) is an ordered selection of $(k)$ elements chosen from $(n)$ distinct elements, where no element may be used more than once.
+A **k-permutation** (or ordered selection without repetition) is an ordered selection of $k$ elements from an $n$-element set, where no element may be used more than once.
 
 The number of such ordered selections is
 
